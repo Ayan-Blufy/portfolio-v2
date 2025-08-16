@@ -5,74 +5,45 @@ export default function ArchivePage() {
   const projects = [
     {
       year: "2023",
-      project: "Emerson Collective",
-      madeAt: "Upstatement",
-      builtWith: ["Next.js", "TypeScript", "SCSS", "Contentful"],
-      link: "emersoncollective.com",
-    },
-    {
-      year: "2023",
-      project: "Harvard Business School Next.js Site",
-      madeAt: "Upstatement",
-      builtWith: ["React", "TypeScript", "Next.js", "Contentful"],
-      link: "hbs.edu",
-    },
-    {
-      year: "2022",
-      project: "Harvard Business School Design System",
-      madeAt: "Upstatement",
-      builtWith: ["Storybook", "React", "TypeScript"],
+      project: "Evidence Management System (EMS)",
+      builtWith: ["Next.js", "TypeScript", "MongoDB", "AWS", "Blockchain"],
       link: "",
     },
     {
-      year: "2022",
-      project: "Threadable",
-      madeAt: "Upstatement",
-      builtWith: ["React Native", "Ruby on Rails", "Firebase"],
-      link: "apps.apple.com",
+      year: "2023",
+      project: "Chat-Room Application",
+      builtWith: ["REACTJS", "MongoDB", "AWS", "Node.js"],
+      link: "https://chats-y8s2.vercel.app/",
     },
     {
       year: "2022",
-      project: "Pratt",
-      madeAt: "Upstatement",
-      builtWith: [
-        "WordPress",
-        "Timber",
-        "WordPress Multisite",
-        "Gutenberg",
-        "JavaScript",
-      ],
-      link: "pratt.edu",
+      project: "Payment-Ledger",
+      builtWith: ["REACTJs", "Firebase", "Blockchain"],
+      link: "https://paypal1.vercel.app/",
     },
     {
       year: "2022",
-      project: "Everytown Gun Law Rankings",
-      madeAt: "Upstatement",
-      builtWith: ["WordPress", "Timber", "PHP", "Airtable API"],
-      link: "everytownresearch.org/rankings",
+      project: "Twitter-blockchain-integration",
+      builtWith: ["REACTJs", "Blockchain", "Firebase"],
+      link: "https://twitter1-beryl.vercel.app/",
+    },
+    {
+      year: "2022",
+      project: "Crowd Funding",
+      builtWith: ["NextJs", "Firebase", "Blockchain"],
+      link: "https://crowd1.vercel.app/",
     },
     {
       year: "2021",
-      project: "Koala Health",
-      madeAt: "Upstatement",
-      builtWith: [
-        "Next.js",
-        "TypeScript",
-        "Redux Toolkit",
-        "Stripe",
-        "Algolia",
-        "Firebase Auth",
-        "Formik",
-        "Vercel",
-      ],
-      link: "koala.health",
+      project: "Disney Clone Trailers Integration",
+      builtWith: ["REACTJs", "Firebase", "Googleapis"],
+      link: "https://disney-ochre.vercel.app/",
     },
     {
       year: "2021",
-      project: "Philadelphia Inquirer Sports",
-      madeAt: "Upstatement",
-      builtWith: ["React", "TypeScript", "Stats Perform API"],
-      link: "inquirer.com/sports",
+      project: "Hotels Travel Advisory",
+      builtWith: ["REACTJs", "Firebase"],
+      link: "https://ayan-blufy.github.io/Travel_app/",
     },
   ];
 
@@ -103,9 +74,6 @@ export default function ArchivePage() {
                     Project
                   </th>
                   <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
-                    Made at
-                  </th>
-                  <th className="hidden py-4 pr-8 text-sm font-semibold text-slate-200 lg:table-cell">
                     Built with
                   </th>
                   <th className="py-4 text-sm font-semibold text-slate-200">
@@ -126,19 +94,19 @@ export default function ArchivePage() {
                     </td>
                     <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                       <div>
-                        <div className="block sm:hidden">
+                        {/* <div className="block sm:hidden">
                           <div className="text-xs font-medium text-slate-500">
                             {project.madeAt}
                           </div>
-                        </div>
+                        </div> */}
                         {project.project}
                       </div>
                     </td>
-                    <td className="hidden py-4 pr-4 align-top text-sm lg:table-cell">
+                    {/* <td className="hidden py-4 pr-4 align-top text-sm lg:table-cell">
                       <div className="translate-y-px whitespace-nowrap text-slate-500">
                         {project.madeAt}
                       </div>
-                    </td>
+                    </td> */}
                     <td className="hidden py-4 pr-4 align-top lg:table-cell">
                       <ul className="flex -translate-y-1.5 flex-wrap">
                         {project.builtWith.map((tech, techIndex) => (

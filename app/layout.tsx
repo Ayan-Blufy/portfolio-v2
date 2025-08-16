@@ -28,7 +28,7 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body className="min-h-screen bg-slate-900 overflow-x-hidden ">{children}</body>
     </html>
   );
 }
