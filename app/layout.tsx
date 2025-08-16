@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-clip">
       <head>
         <link rel="icon" href={logo.src} sizes="any" />
 
@@ -28,7 +28,9 @@ html {
 }
         `}</style>
       </head>
-      <body className="min-h-screen bg-slate-900 ">{children}</body>
+      <body className="bg-slate-900 text-slate-300 overflow-x-clip">
+        {children}
+      </body>
     </html>
   );
 }
