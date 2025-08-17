@@ -398,7 +398,7 @@ export default function Portfolio() {
                 <div className="mb-12">
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-base"
-                    href="https://my-tf-test-bucket-ayan0093.s3.us-east-1.amazonaws.com/Ayan_Resume.pdf"
+                    href="https://my-tf-test-bucket-ayan0093.s3.us-east-1.amazonaws.com/AyanResume.pdf"
                     target="_blank"
                     rel="noreferrer"
                   >
